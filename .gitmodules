@@ -1,0 +1,3 @@
+[submodule "feedback-synthesis"]
+	path = feedback-synthesis
+	url = https://github.com/rmcendarfer2017/Feedback-Synthesis.git
