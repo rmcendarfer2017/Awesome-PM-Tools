@@ -36,6 +36,27 @@ Your note body here.
 
 ---
 
+### [Backlog Groomer](https://github.com/rmcendarfer2017/backlog-groomer)
+
+An AI-powered backlog grooming tool that connects to your Jira backlog, scores every ticket using a structured prioritization framework, and surfaces the housekeeping work — duplicates, stale tickets, enrichment gaps — that quietly degrades backlog quality over time.
+
+**What it does:**
+- Fetches your Jira backlog and runs a housekeeping sweep: merge candidates, stale tickets, enrichment rewrites, and theme orphans
+- Scores every ticket across four dimensions — quality, freshness, theme alignment, and similarity — and produces a ranked priority table
+- Surfaces coordination flags (compliance, security, legal, partner dependencies) alongside scores without deflating them
+- Provides an interactive table sortable by any scoring dimension with hover-to-expand score breakdowns
+
+**Key features:**
+- Jira REST API integration — connect with an API token, no plugins required
+- Demo mode — load 12 pre-built tickets to explore the full feature set without a Jira account
+- Layer 1 scoring — composite priority score with visible dimension breakdown so every ranking has a reason
+- Coordination flags — Light / Moderate / Significant overhead flags shown separately from the score
+- Claude.ai skill — also available as a `/backlog-groomer` slash command for teams already using Claude Chat with Jira connected
+
+**Also available as a Claude.ai skill:** For PMs already using Claude.ai with Jira MCP connected, the `skill/` folder contains a custom slash command that delivers the same housekeeping sweep and scoring directly in a Claude Chat conversation — no separate app required.
+
+---
+
 ## Getting Started
 
 Each tool lives in its own subdirectory as an independent repository. Clone with submodules to get everything:
